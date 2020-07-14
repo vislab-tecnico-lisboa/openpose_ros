@@ -17,7 +17,8 @@ find_package(catkin REQUIRED COMPONENTS
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/Modules")
 
 # find_package(CUDA REQUIRED) # Uncomment this line if you have trouble compiling
-find_package(OpenCV REQUIRED)
+find_package(OpenCV 3.4.6 REQUIRED)
+find_package(Caffe)
 find_package(GFlags)
 find_package(Glog)
 find_package(OpenPose REQUIRED)
